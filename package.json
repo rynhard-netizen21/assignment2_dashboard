@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "name": "assignment2_dashboard",
+  "version": "1.0.0",
+  "description": "This repository is created for Assignment 2.",
+  "main": "dbMaps.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rynhard-netizen21/assignment2_dashboard.git"
+  },
+  "keywords": [],
+  "author": "Rynhard Britz",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rynhard-netizen21/assignment2_dashboard/issues"
+  },
+  "homepage": "https://github.com/rynhard-netizen21/assignment2_dashboard#readme"
+}

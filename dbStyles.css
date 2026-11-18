@@ -1,0 +1,16 @@
+body {
+    background-color:lightgray ;
+}
+
+#header-section {
+    width:100%;
+    height:10%;
+    padding:0%;
+    background-color:lightsalmon;
+   /*background-color:blue;*/
+}
+
+#map { 
+    width: 100%;
+    height: 500px;
+ }
