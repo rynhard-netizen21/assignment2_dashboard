@@ -11,23 +11,66 @@
 <body>
     <section id="header-section">
         <header id="headerDB">
-            <h1 id="db-header">Dashboard</h1>
-            <a href="#mapBody">Map</a>
-            <a href="#charts-section">Charts</a>
-            <a herf="#">About</a>
+            <span><h1 id="db-header">Dashboard of South Africa</h1></span>
+            <span><a href="#mapBody">Map</a></span>
+            <span><a href="#charts-section">Charts</a></span>
         </header>
+    
     </section>
-    <section id="mapBody">
-        <h1>Gini Coeficiient Map</h1>
+    <section id="filters">
+        <h2>Filter options</h2>
+        <span>
+        <!-- Boundary level filter -->
+        <label for="boundary-level">Boundary Level:</label>
+        <select id="boundary-level">
+            <option value="national">National</option>
+            <option value="provincial">Provincial</option>
+            <option value="municipal">Municipal</option>
+        </select>
+        </span>
+        <!-- Year filter -->
+        <span>
+        <label for="year-select">Year:</label>
+        <select id="year-select">
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <!-- Options filled by JS -->
+        </select>
+        </span>
+        <span>
+        <!-- Metric selector -->
+        <label for="metric-select">Metric:</label>
+        <select id="metric-select">
+            <option value="gini">Gini Coefficient</option>
+            <option value="median_income">Median Income</option>
+            <option value="wage_bands">Wage Bands</option>
+        </select>
+        </span>
+    </section> 
+    <section id="map-body">   
         <div id="map"></div>
     </section>
     <section id="charts-section">
-        <h1>Gini Coeficient Charts</h1>
         <div id="chart">
+            <h1>Gini Coeficient Charts</h1>
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
         </div>
     </section>
     
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="dbMaps.js" type="module"></script>
+    
 </body>
 </html>
