@@ -1,22 +1,38 @@
 body {
-    background-color:lightgray ;
+    background-color:rgb(205, 207, 207) ;
 }
 
 #header-section {
     width:100%;
     height:10%;
     padding:0%;
-    background-color:lightsalmon;
-   /*background-color:blue;*/
+    background-color:rgb(255, 246, 232);
+    font-family: Arial, sans-serif;
 }
-
-#map-navigation {
-    width: 100%;
-    height: 150px;
-    background-color:lightsalmon
+#filters {
+    background: rgb(244, 244, 244);
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+}
+#filters label {
+     margin: 6px 0 3px;
+    font-weight: bold;
+}
+#filters select {
+    margin-right: 8px;
 }
 
 #map { 
     width: 100%;
     height: 500px;
  }
+
+#charts-section, #chart {
+    background: rgb(244, 244, 244);
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+}
