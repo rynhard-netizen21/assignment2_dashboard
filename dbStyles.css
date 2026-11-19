@@ -10,6 +10,12 @@ body {
    /*background-color:blue;*/
 }
 
+#map-navigation {
+    width: 100%;
+    height: 150px;
+    background-color:lightsalmon
+}
+
 #map { 
     width: 100%;
     height: 500px;
